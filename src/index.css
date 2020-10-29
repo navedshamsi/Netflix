@@ -1,0 +1,310 @@
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+body{
+    margin:0;
+    padding:0;
+}
+
+@media (min-width:600px){
+    *{
+        background-color:#0F0E0E;
+        color:white;
+        padding:0;
+        margin: 0;
+    }
+#netflixOriginialsimages{
+    height:clamp(280px,40vw,280px);
+    width:clamp(190px,30vw,200px);
+    margin: 4px;
+   transition-delay: 150ms;
+   transition-timing-function:ease-in;
+   transition-duration: 200ms;
+   border-radius:clamp(8px,1vw,1vw); 
+}
+#restImagesOfRow{
+    height:clamp(130px,25vw,130px);
+    width:clamp(200px,30vw,220px);
+    margin: 4px;
+    transition-delay: 150ms;
+   transition-timing-function:ease-in-out;
+   transition-duration: 200ms;
+   border-radius:clamp(8px,1vw,1vw);
+}
+
+
+#restImagesOfRow:hover,#netflixOriginialsimages:hover{
+    transform: scale(1.07,1.15);
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);;
+}
+
+
+.restRows{
+    display: flex;
+    flex-wrap:nowrap;
+    overflow: scroll;
+    width:100%;
+    padding: 30px 0 30px 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+#title{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    
+}
+
+.headerContainer{
+    width:100%;
+    height: clamp(300px,60vw,735px);
+    margin:0;
+    padding: 0;
+    z-index: 0;
+    overflow:hidden;
+ 
+ }
+.headerTitle{
+    width:30%;
+    height: auto;
+    position:absolute;
+    font-size:clamp(12px,6vw,60px);
+    margin-top:clamp(120px,19vw,19vw);
+    left:5vw;
+    text-align: left;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px black;
+    background-color:transparent;
+    padding-left:0;
+}
+#headerImg
+{   width: 100%;
+    height: 96%;
+    margin:0;
+}
+.blur{
+    position: relative;
+    top:-5vw;
+    height:8vw;
+    width:101%;
+    background: rgb(15,14,14);
+    background: linear-gradient(0deg, rgba(15,14,14,1) 31%, rgba(255,255,255,0.4321078773306197) 100%);
+  filter: blur(15px); 
+}
+
+#vid{
+    position:absolute;
+    color:white;
+    font-size: large;
+    height:105vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+   justify-content:space-evenly;
+   align-items: center;
+   text-align: center;
+    background-color: black;
+    padding-top: 0.5vw;
+    font-size: 5vw;
+    animation: viddiv 0.5s;
+    animation-timing-function: ease;
+}
+@keyframes viddiv
+{
+     
+    0%
+    {
+            opacity:1;
+            transform-origin: top;
+            transform: translateY(-100vh);
+            opacity:0;
+        }
+        100%
+        {
+            opacity:1;
+            transform-origin: top;
+            transform: translateY(0)
+        }
+}
+#vidbutton
+{
+    
+    width: clamp(100px,5vw,4vw);
+    height: clamp(50px,5vw,3vw);
+   color:white;
+   font-size: 1.5vw;
+   margin-top: 3vw;
+}
+#player
+
+{  position: relative;
+    margin: auto;
+    margin-top: 0;
+}
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+    *{
+        background-color:#0F0E0E ;
+        color:white;
+        padding:0;
+        margin: 0;
+    }
+    #netflixOriginialsimages{
+        height:clamp(280px,40vw,280px);
+        width:clamp(190px,30vw,200px);
+        margin-left: 12px;
+       transition-delay: 150ms;
+       transition-timing-function:ease-in;
+       transition-duration: 200ms;
+       border-radius:clamp(8px,1vw,1vw); 
+    }
+    #restImagesOfRow{
+        height:clamp(130px,25vw,130px);
+        width:clamp(200px,30vw,220px);
+        margin-left: 12px;
+        transition-delay: 150ms;
+       transition-timing-function:ease-in-out;
+       transition-duration: 200ms;
+       border-radius:clamp(8px,1vw,1vw);
+    }
+    
+    
+    #restImagesOfRow:hover,#netflixOriginialsimages:hover{
+        transform: scale(1.07,1.15);
+        -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);;
+        border-radius: 2vh;
+    }
+  
+    
+    
+    
+    
+    .restRows{
+        display: flex;
+        flex-wrap:nowrap;
+        overflow: scroll;
+        width:100%;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        padding: 20px 0 20px 0px;
+    }
+    
+    
+    #title{
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    .headerContainer{
+        width:99vw;
+        height: clamp(300px,60vw,735px);
+        margin:0;
+        padding: 0;
+        z-index: 0;
+        overflow:hidden;
+     
+     }
+    .headerTitle{
+        width:30%;
+        height: auto;
+        position:absolute;
+        font-size:clamp(12px,6vw,60px);
+        margin-top:clamp(120px,19vw,19vw);
+        left:5vw;
+        text-align: left;
+        color: #FFFFFF;
+        text-shadow: 0 0 10px black;
+        background-color:transparent;
+        padding-left:0;
+    }
+    #headerImg
+    {   width: 100%;
+        height: 96%;
+        margin:0;
+    }
+    .blur{
+        position: relative;
+        top:-5vw;
+        height:8vw;
+        width:101%;
+        background: rgb(15,14,14);
+        background: linear-gradient(0deg, rgba(15,14,14,1) 31%, rgba(255,255,255,0.4321078773306197) 100%);
+      filter: blur(15px); 
+    }
+    
+    #vid{
+        position:absolute;
+        color:white;
+        font-size: large;
+        height:105vh;
+        width:100vw;
+        display: flex;
+        
+        text-align: center;
+        background-color: black;
+        padding-top: 20vh;
+        font-size: 8vw;
+        animation: viddiv 1s ease-in-out;
+    }
+    @keyframes viddiv
+    {
+        0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+            opacity:1;
+            transform-origin: top;
+            transform: translateY(-100vh);
+            opacity:0;
+        }
+        100%
+        {
+            opacity:1;
+            transform-origin: top;
+            transform: translateY(0)
+        }
+    }
+    #vidbutton
+    {
+        
+        width: clamp(100px,5vw,4vw);
+        height: clamp(30px,5vw,3vw);
+       color:white;
+      margin-top: 70px;
+    }
+    #player
+    
+    {  position: relative;
+        margin: auto;
+        margin-top: 1vw;
+    }
+    #footer
+    {
+        width:100%;
+        background-color: black;
+        height: 300px;
+    }
+    }
